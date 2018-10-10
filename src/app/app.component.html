@@ -1,0 +1,3 @@
+<app-meu-componente *ngIf="isVisible" nomeExterno="Some"></app-meu-componente>
+<app-meu-componente nomeExterno="Não Some"></app-meu-componente>
+<app-meu-componente [nomeExterno]="title" (myClick)="handleClick($event)"></app-meu-componente>
