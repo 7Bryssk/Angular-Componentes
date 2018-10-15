@@ -1,8 +1,20 @@
-<p>
+<textarea [(ngModel)]="myStyle">
+
+</textarea>
+
+<p [style]="mySafeStyle">
   meu-componente works!
   Treina Web
-  <br>
+  <br />
+
+  <ng-content select=".cima"></ng-content>
+
   {{nomeExterno}}
+
+  <ng-content select=".baixo"></ng-content>
+
+  <br />
+  <input type="text" [(ngModel)]="nome" (input)="onChangeName()" #meuElemento />
 
   <button (click)="callClick()">Click</button>
 </p>
